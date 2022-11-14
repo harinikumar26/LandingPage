@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Landing Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        .jumbotron {
+            background-image: url(images/food.jpg);
+            padding: 5em inherit;
+            object-fit: cover;
+            background-size: cover;
+            background-attachment: fixed;
+            color: rgb(255, 255, 255);
+        }
+
+        .card-img-top {
+            width: 220;
+            height: 200;
+        }
+
+        #icon {
+            width: 200px;
+        }
+
+        #footer {
+            background-color: aqua;
+            padding-top: 50px;
+            margin-top: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        body {
+            padding-top: 70px;
+        }
+        #about{
+            padding-top: 50px;
+            margin-top: 50px;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
+
+    <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark" id="navbar">
+        <a class="navbar-brand" href="#">Food World</a>
+        <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+                <a class="nav-link" href="#carouselExampleIndicators">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Get App</a>
+            </li>
+        </ul>
+        <form class="form-inline pull-xs-right">
+            <input class="form-control" type="email" placeholder="Email">
+            <input class="form-control" type="password" placeholder="PassWord">
+            <button class="btn btn-success" type="submit">LogIn</button>
+        </form>
+    </nav>
+
+
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="images/steak.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>"Food is symbolic of love when words are inadequate."</h5>
+                        <p>We are providing Tempting Foods...Instead of going out to dinner, buy good food.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/gravy.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="images/salad.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <div id="about">
+            <h2>Who we are? & What so special about us?</h2>
+            <p>A good restaurant is like a vacation; it transports you, and it becomes a lot more than just about the
+                food. We are one of the famous high-end restaurant in the world with more than 150+ franchise. You can
+                try our foods more than 20+ countries in all over the World.
+                But the taste is literally same in all the outlets.</p>
+            <h2>Why are we here now?</h2>
+            <p>“The business of feeding people is the most amazing business in the world.” So,we launched our new App
+                "Food World", Get Our food anytime from your Home. Download the App -> Make order -> Get the food -> Taste it -> And Rate us :) </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top" src="images/coffee.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Coffee & Drinks</h5>
+                    <p class="card-text">Stressed, blessed, and coffee obsessed.Today's good mood is sponsored by
+                        coffee.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card" id="cardid">
+                <img class="card-img-top" src="images/food.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Snack Items</h5>
+                    <p class="card-text">Welcome to Good Burger, home of the Good Burger. Take your snack Time. Can I
+                        take your order?</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="images/breakfeast.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Healthy BreakFasts</h5>
+                    <p class="card-text">Eat some breakfast then change the world.In the morning We are Cereal Killers,
+                        Will you join With Us?.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div>
+            <h2>Download Our App!</h2>
+            <p class="lead">Really, Why Should I download this App?</p>
+            <p><a href=""><img id="icon" src="images/googleplay.jpg"></a></p>
+        </div>
+    </div>
+</body>
+
+</html>
